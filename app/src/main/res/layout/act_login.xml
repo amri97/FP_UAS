@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="org.amrone.cgv.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="160dp"
+            android:hint="username"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="password"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="login"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="not_register" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="register"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
